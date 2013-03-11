@@ -104,6 +104,7 @@ div#submenuitem {
 	max-width: 25%;
 	text-align: center;
 	min-width: 220px;
+	display:none;
 }
 
 div#submenuitem div#image {

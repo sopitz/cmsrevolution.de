@@ -102,6 +102,16 @@
 	</footer>
 
 </body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#submenuitem.item1').fadeIn('slow');
+	setTimeout("$('#submenuitem.item2').fadeIn('slow')", 300);
+	setTimeout("$('#submenuitem.item3').fadeIn('slow')", 600);
+	setTimeout("$('#submenuitem.item4').fadeIn('slow')", 900);
+})
+
+</script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
