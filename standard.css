@@ -80,13 +80,28 @@ div#mainmenuitem span.label {
 div#sharemenu {
 	float:left;
 	padding-left: 20px;
+	cursor: pointer;
+	
 }
 
 div#sharemenu div {
 	padding-top: 35px;
-	padding-left: 5px;
+	padding-left: 15px;
 	float:left;
 	cursor:pointer;
+	color: #FFFFFF;
+}
+
+div#sharemenu div.fb:hover {
+	color: #3B5998;
+}
+
+div#sharemenu div.twitter:hover {
+	color: #60D7FF;
+}
+
+div#sharemenu div.gplus:hover {
+	color: #D34836;
 }
 
 submenu {
@@ -114,6 +129,13 @@ div#submenuitem div#image {
     position: relative;
     top: 20px;
     width: 81px;
+}
+
+div#submenuitem div#image span.icon {
+	position:absolute;
+	top: 32px;
+	left: 32px;
+	color: #FFFFFF
 }
 
 div#submenuitem div#headline {
