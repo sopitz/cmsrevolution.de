@@ -133,9 +133,15 @@ div#submenuitem div#image {
 
 div#submenuitem div#image span.icon {
 	position:absolute;
-	top: 32px;
-	left: 32px;
-	color: #FFFFFF
+	top: 30px;
+	left: 30px;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+
+div#submenuitem:hover {
+	background-color: #333;
+	cursor:pointer;
 }
 
 div#submenuitem div#headline {
@@ -154,12 +160,13 @@ div#submenuitem div#description {
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	hyphens: auto;
-	padding-right: 20px;
+	padding-right: 10px;
+	padding-left: 10px
 }
 
 
 div#submenuitem div#description.last {
-	padding-right: 0px;
+	padding-right: 10px;
 }
 
 footer {
