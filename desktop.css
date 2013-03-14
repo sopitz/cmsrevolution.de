@@ -1,0 +1,39 @@
+
+/*end general*/
+
+
+		div#logo span.main {
+			display: block;
+		}
+	/*end logo*/
+
+	div#mainmenu {
+		margin: 10px 0 0 60px;
+		height: 80px;
+	}
+
+		div#mainmenuitem {
+			height: 80px;
+			padding-bottom: 10px;
+		}
+
+			div#mainmenuitem span.label {
+				position: absolute;
+				top: 40px;
+			}
+	/*end mainmenu*/
+
+	div#sharemenu {
+		float: left;
+		padding-left: 20px;
+	}
+	/*end sharemenu*/
+/*end header*/
+
+
+
+/*end submenu*/
+
+
+
+/*end footer*/
