@@ -1,31 +1,34 @@
 body {
-    background: url("http://static.wix.com/media/41d000_d552a933cd4c566cfd9fa7311e51bbc6.jpg_crp_0_0_1280_800_1280_800_crp") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	overflow-x:hidden;
   	overflow-y:scroll;
+	
+    background: none; 
 }
 
 div#content {
 	position: relative;
-	width: 80%;
-	max-width: 1024px;
 	margin:auto;
+	
+	width: 95%;
+	max-width: none;
 }
 /*end general*/
 
 
 header {
 	left: 0px;
-	position: fixed;
 	z-index: 100;
 	background-color: #1C1C1C;
-	width: 100%;
-	max-width:100%;
 	padding-top: 10px;
 	padding-bottom: 20px;
+	
+	position: absolute;
+	width: none;
+	max-width:none;
 }
 
 	div#logo {
@@ -51,19 +54,21 @@ header {
 			margin: 0 4px;
 			border-top: 1px solid #FFFFFF;
 			cursor: pointer;
-			width: 100px;
-			max-width: 100px;
 			float:left;
 			font-size: 12px;
 			color: #999999;
 			font: 12px "Play","sans-serif";
 			color: #FFFFFF;
+			
+			width: none;
+			max-width: none;
 		}
 		
 		div#mainmenuitem:hover {
 			border-top: 4px solid #FFFFFF;
-			max-height: 80px;
 			color: #FFBB00;
+			
+			max-height: none;
 		}
 
 			div#mainmenuitem span.label {
@@ -104,26 +109,29 @@ submenu {
 	position: absolute;
 	bottom: 40px;
 	background-color: #1C1C1C;
-	width: 100%;
-	max-width:100%;
+	
+	width: none;
+	max-width: none;
 }
 
 	div#submenuitem {
 		float:left;
-		width: 25%;
-		max-width: 25%;
 		text-align: center;
-		min-width: 220px;
 		display:none;
+		
+		width: none;
+		max-width: none;
+		min-width: none;
 	}
 
 		div#submenuitem div#image {
 			left: 50%;
 			margin-left: -40px;
-			min-height: 80px;
 			position: relative;
 			top: 20px;
-			width: 81px;
+			
+			width: none;
+			min-height: none;
 		}
 
 			div#submenuitem div#image span.icon {

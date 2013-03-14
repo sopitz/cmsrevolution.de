@@ -1,0 +1,13 @@
+body {
+	width: 480px;
+	x-overflox: hidden;
+	y-overflow: scroll;
+}
+
+submenu {
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+}
