@@ -1,88 +1,92 @@
 body {
-  	/*-webkit-background-size: cover;
+    background: url("http://static.wix.com/media/41d000_d552a933cd4c566cfd9fa7311e51bbc6.jpg_crp_0_0_1280_800_1280_800_crp") no-repeat center center fixed;
+  	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	overflow-x:hidden;
-  	overflow-y:scroll;*/
-	
-    background: none;
-	width: 480px;
+  	overflow-y:scroll;
+	width: 99%;
 }
 
 div#content {
 	position: relative;
-	margin:auto;
-	
 	width: 95%;
-	max-width: 480px;
+	max-width: 1024px;
+	margin:auto;
 }
 /*end general*/
 
 
 header {
 	left: 0px;
-	z-index: 100;
+	top: 0px;
+	position: absolute;
+	z-index: auto;
 	background-color: #1C1C1C;
-	padding-top: 10px;
-	padding-bottom: 20px;
-	
-	position: relative;
 	width: 100%;
-	max-width: auto;
+	max-width:100%;
+	padding: 0px;
+	display: block;
 }
 
 	div#logo {
-		float:left;
+		float: none;
 		font-weight: 700;
-		
+		width: 100%;
+		display: block;
+		zoom: 270%;
+		text-align: center;
 	}
 
 		div#logo span.main {
 			font: 37px/1.4em "Jura","sans-serif";
 			color: #999999;
+			display: block;
 		}
 		
 		div#logo span.slogan {
 			font: 19px/1.4em "Play","sans-serif";
 			color: #FFFFFF;
-			
 			display: block;
 		}
+	/*end logo*/
 	
 	div#mainmenu {
-		float: right;
+		float: none;
+		margin: 20px auto 10px auto;
+		width: auto;
+		zoom: 270%;
+		text-align: center;
 	}
 	
 		div#mainmenuitem {
-			margin: 20px 4px;
-			border-top: 1px solid #FFFFFF;
+			margin: 5px 4px;
+			border-top: 0.5px solid #FFFFFF;
 			cursor: pointer;
+			width: auto;
+			max-width: 100%;
+			float: none;
 			font-size: 12px;
-			color: #999999;
 			font: 12px "Play","sans-serif";
 			color: #FFFFFF;
-			
-			width: none;
-			max-width: none;
-			display: block;
+			display: inline;
+			zoom: 140%;
 		}
 		
 		div#mainmenuitem:hover {
-			border-top: 4px solid #FFFFFF;
-			color: #FFBB00;
-			
-			max-height: none;
+			border-top: 1px solid #FFFFFF;
+			max-height: 100%;
+			color: #FFFFFF;
 		}
 
 			div#mainmenuitem span.label {
 				font: bold 12px/1.1em;
-				padding-left: 10px;
+				padding: 0 10px 0 10px;
 			}
 	/*end mainmenu*/
-
+	
 	div#sharemenu {
-		
 		display: none;
 	}
 	/*end sharemenu*/
@@ -90,33 +94,40 @@ header {
 	
 
 submenu {
-	left: auto;
+	left: 0px;
 	position: relative;
-	bottom: auto;
-	background-color: #1C1C1C;
-	
+	top: 400px;
+	background-color: transparent;
 	width: 100%;
-	max-width: 480px;
+	max-width:100%;
+	display: block;
 }
 
 	div#submenuitem {
-		float:left;
-		text-align: center;
-		display:none;
-		
-		width: none;
-		max-width: none;
-		min-width: none;
+		float:none;
+		width: 100%;
+		max-width: 100%;
+		text-align: inherit;
+		min-width: 220px;
+		display: none;
+		padding-bottom: 20px;
+		margin-bottom: 10px;
+		background-color: #1C1C1C;
+		max-height: 380px;
 	}
 
 		div#submenuitem div#image {
-			left: auto;
-			margin-left: -40px;
+			left: 20px;
+			top: 50%;
+			margin-left: 0;
+			height: 80px;
+			min-height: 80px;
 			position: relative;
 			top: 20px;
-			
-			width: none;
-			min-height: none;
+			width: 100px;
+			float: left;
+			zoom: 230%;
+			margin-top: 30px;
 		}
 
 			div#submenuitem div#image span.icon {
@@ -135,12 +146,15 @@ submenu {
 			div#submenuitem div#headline {
 				font: bold 20px/1.3em "Helvetica","Arial","sans-serif";
 				color: #FFFFFF;
-				padding-top: 40px;
+				padding-top: 11px;
 				padding-bottom: 12px;
+				padding-left: 10px;
+				margin-left: 130px;
+				zoom: 200%;
 			}
 
 			div#submenuitem div#description {
-				font: 12px/1.3em "Helvetica","Arial","sans-serif";
+				font: 14px/1.3em "Helvetica","Arial","sans-serif";
 				color: #999999;
 				padding-bottom: 20px;
 				text-align:justify;
@@ -148,8 +162,11 @@ submenu {
 				-moz-hyphens: auto;
 				-ms-hyphens: auto;
 				hyphens: auto;
-				padding-right: 10px;
-				padding-left: 10px
+				padding-right: 20px;
+				padding-left: 10px;
+				zoom: 200%;
+				display: block;
+				margin-left: 130px;
 			}
 
 
@@ -161,17 +178,17 @@ submenu {
 
 footer {
 	left: 0px;
-	bottom: 0px;
-	z-index: 100;
+	position: fixed;
+	bottom: 0;
+	z-index: auto;
 	background-color: #1C1C1C;
+	width: 100%;
+	max-width:100%;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	color: #999999;
 	font: 12px/1.3em "Jura","sans-serif";
-	
-	position: absolute;
-	width: 100%;
-	max-width: 480px;
+	display: none;
 }
 
 	footer span.copyright {
