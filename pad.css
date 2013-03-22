@@ -1,4 +1,19 @@
+body {
+    background: url("http://static.wix.com/media/41d000_d552a933cd4c566cfd9fa7311e51bbc6.jpg_crp_0_0_1280_800_1280_800_crp") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	overflow-x:hidden;
+  	overflow: ;
+}
 
+div#content {
+	position: relative;
+	width: 95%;
+	max-width: 1024px;
+	margin:auto;
+}
 /*end general*/
 
 	
@@ -28,13 +43,42 @@
 	/*end mainmenu*/
 
 	div#sharemenu {
-		display: none;
+		cursor: pointer;
+		width: 35px;
+		position: absolute;
+		top: 5px;
+		right: 5px;
 	}
+	
+		div#sharemenu div {
+			padding-top: 20px;
+			padding-left: 15px;
+			float:left;
+			cursor:pointer;
+			color: #FFFFFF;
+			float: left;
+			color: #999999;
+		}
+	
+		div#sharemenu div.fb:hover {
+			color: #3B5998;
+		}
+		
+		div#sharemenu div.twitter:hover {
+			color: #60D7FF;
+		}
+		
+		div#sharemenu div.gplus:hover {
+			color: #D34836;
+		}
 	/*end sharemenu*/
 /*end header*/
 
 
-
+submenu {	
+	position: fixed;
+	bottom: 20px;
+}
 /*end submenu*/
 
 footer {

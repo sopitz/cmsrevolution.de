@@ -93,7 +93,7 @@
 				<div id="description">
 					I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.
 				</div><!-- end description -->
-			</div><!-- end submenuitem -->
+			</div></a><!-- end submenuitem -->
 			<div id="submenuitem" class="item4">
 				<div id="image">
 					<img src="img/icon_green.svg" />	
@@ -119,16 +119,75 @@
 </body>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript">
-
 $(document).ready(function() {
-	$('#submenuitem.item1').fadeIn('slow');
+	$(document).bind('touchmove', false);
+	$('#submenuitem.item1').fadeTo('slow', 1);
 	
 	//setTimeout("$('#submenuitem.item1 img').attr('src', 'img/icon_red.svg');", 5000);
-	setTimeout("$('#submenuitem.item2').fadeIn('slow')", 400);
-	setTimeout("$('#submenuitem.item3').fadeIn('slow')", 800);
-	setTimeout("$('#submenuitem.item4').fadeIn('slow')", 1200);
+	setTimeout("$('#submenuitem.item2').fadeTo('slow', 1);", 400);
+	setTimeout("$('#submenuitem.item3').fadeTo('slow', 1);", 800);
+	setTimeout("$('#submenuitem.item4').fadeTo('slow', 1);", 1200);
 })
 
+</script>
+<script type="text/javascript">
+/*!
+ * jQuery Double Tap Plugin.
+ *
+ * Copyright (c) 2010 Raul Sanchez (http://www.appcropolis.com)
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ */
+
+(function($){
+    // Determine if we on iPhone or iPad
+    var isiOS = false;
+    var agent = navigator.userAgent.toLowerCase();
+    if(agent.indexOf('iphone') >= 0 || agent.indexOf('ipad') >= 0){
+           isiOS = true;
+    }
+
+    $.fn.doubletap = function(onDoubleTapCallback, onTapCallback, delay){
+        var eventName, action;
+        delay = delay == null? 500 : delay;
+        eventName = isiOS == true? 'touchend' : 'click';
+
+        $(this).bind(eventName, function(event){
+            var now = new Date().getTime();
+            var lastTouch = $(this).data('lastTouch') || now + 1 /** the first time this will make delta a negative number */;
+            var delta = now - lastTouch;
+            clearTimeout(action);
+            if(delta<500 && delta>0){
+                if(onDoubleTapCallback != null && typeof onDoubleTapCallback == 'function'){
+                    onDoubleTapCallback(event);
+                }
+            }else{
+                $(this).data('lastTouch', now);
+                action = setTimeout(function(evt){
+                    if(onTapCallback != null && typeof onTapCallback == 'function'){
+                        onTapCallback(evt);
+                    }
+                    clearTimeout(action);   // clear the timeout
+                }, delay, [event]);
+            }
+            $(this).data('lastTouch', now);
+        });
+    };
+})(jQuery);
+$(document).doubletap(
+    /** doubletap-dblclick callback */
+    function(event){
+        event.preventDefault();
+    },
+    /** touch-click callback (touch) */
+    function(event){
+        event.preventDefault();
+    },
+    /** doubletap-dblclick delay (default is 500 ms) */
+    400
+);
 </script>
 <script type="text/javascript">
 

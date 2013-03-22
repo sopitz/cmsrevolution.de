@@ -114,7 +114,7 @@ submenu {
 		max-width: 25%;
 		text-align: center;
 		min-width: 220px;
-		display:none;
+		opacity:0;
 	}
 
 		div#submenuitem div#image {
