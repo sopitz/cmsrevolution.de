@@ -1,5 +1,5 @@
 body {
-    background: url("http://static.wix.com/media/41d000_d552a933cd4c566cfd9fa7311e51bbc6.jpg_crp_0_0_1280_800_1280_800_crp") no-repeat center center fixed; 
+    background: url("http://cdn0.sbnation.com/entry_photo_images/4325046/new-macbook-pro-retina-hands-pics-DSC_5562-rm-verge-1020_verge_super_wide.jpg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -21,7 +21,7 @@ header {
 	left: 0px;
 	position: fixed;
 	z-index: 100;
-	background-color: #1C1C1C;
+	background-color: #C1C1C1;
 	width: 100%;
 	max-width:100%;
 	padding-top: 10px;
@@ -63,7 +63,7 @@ header {
 		div#mainmenuitem:hover {
 			border-top: 4px solid #FFFFFF;
 			max-height: 80px;
-			color: #FFBB00;
+			color: #B16B00;
 		}
 
 			div#mainmenuitem span.label {
@@ -103,7 +103,7 @@ submenu {
 	left: 0px;
 	position: absolute;
 	bottom: 40px;
-	background-color: #1C1C1C;
+	background-color: #C1C1C1;
 	width: 100%;
 	max-width:100%;
 }
@@ -130,25 +130,25 @@ submenu {
 				position:absolute;
 				top: 30px;
 				left: 30px;
-				color: #FFFFFF;
+				color: #EEEEEE;
 				font-size: 20px;
 			}
 
 		div#submenuitem:hover {
-			background-color: #333;
-			cursor:pointer;
+			background-color: #CCC;
+			cursor: pointer;
 		}
 
 			div#submenuitem div#headline {
 				font: bold 20px/1.3em "Helvetica","Arial","sans-serif";
-				color: #FFFFFF;
+				color: #777;
 				padding-top: 40px;
 				padding-bottom: 12px;
 			}
 
 			div#submenuitem div#description {
 				font: 12px/1.3em "Helvetica","Arial","sans-serif";
-				color: #999999;
+				color: #888;
 				padding-bottom: 20px;
 				text-align:justify;
 				-webkit-hyphens: auto;
@@ -171,7 +171,7 @@ footer {
 	position: fixed;
 	bottom: 0px;
 	z-index: 100;
-	background-color: #1C1C1C;
+	background-color: #C1C1C1;
 	width: 100%;
 	max-width:100%;
 	padding-top: 5px;
